@@ -30,3 +30,12 @@ def hello_food():
     "statusCode": status.HTTP_200_OK
   }
   return JSONResponse(status_code=status.HTTP_200_OK, content=response)
+
+
+@router.get("/hanging")
+def hello_hanging(person: str = 'Nguyen'):
+  response = {
+    "message": "Hi! Sailun here again! I love hanging out with {}".format(person),
+    "statusCode": status.HTTP_200_OK
+  }
+  return JSONResponse(status_code=status.HTTP_200_OK, content=response)
