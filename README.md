@@ -5,6 +5,7 @@ This project is for Sailun's API tutorial
 First create an account on Heroku
 Then download [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli)
 
+Below is how you can deploy docker
 ```
 heroku container:login
 heroku create {container_name} (do only once)
