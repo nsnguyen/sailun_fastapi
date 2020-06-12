@@ -1,4 +1,4 @@
-FROM tiangolo/uvicorn-gunicorn-fastapi:python3.8
+FROM tiangolo/uvicorn-gunicorn-fastapi:python3.8-slim
 
 COPY requirements.txt /
 
@@ -21,6 +21,6 @@ ENV MODULE_NAME="app.main"
 ENV PORT="8080"
 EXPOSE 8080
 
-RUN groupadd -r app \
-    && useradd -r -g app app
-USER app
+#RUN groupadd -r app \
+#    && useradd -r -g app app
+#USER app
